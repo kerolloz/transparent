@@ -52,7 +52,7 @@ const app = uWS
       .writeHeader("Access-Control-Expose-Headers", "*")
       .end();
   })
-  .listen(port, (token) => {
+  .listen("0.0.0.0", port, (token) => {
     if (token) {
       console.log("Listening to port " + port);
     } else {
