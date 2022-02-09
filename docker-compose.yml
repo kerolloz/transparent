@@ -1,7 +1,15 @@
 services:
   api:
+    restart: always
     build: api
     environment:
       - PORT=5000 
+    ports:
+      - "5000:5000"
   client:
+    restart: always
+    depends_on:
+      - api
     build: client
+    ports:
+      - "3000:3000"
