@@ -1,0 +1,7 @@
+services:
+  api:
+    build: api
+    environment:
+      - PORT=5000 
+  client:
+    build: client
