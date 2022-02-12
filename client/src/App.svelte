@@ -50,7 +50,8 @@
         <span class={connectionStateClass}>{connectionState}</span>
       </p>
       <p>
-        Transparent shows you a public log of the HTTP requests received on
+        Transparent shows you a real-time public log of the HTTP requests
+        received on
         <a target="_blank" href={HTTP_URL}>{HTTP_URL}</a>
       </p>
       <div class="text-end">
