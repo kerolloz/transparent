@@ -1,9 +1,8 @@
 <script>
   import Request from "./lib/components/Request.svelte";
 
-  const BASE_URL = "api.transparent.ga";
-  const HTTP_URL = "https://" + BASE_URL;
-  const socket = new WebSocket("wss://" + BASE_URL);
+  const HTTP_URL = import.meta.env.VITE_HTTP_URL;
+  const socket = new WebSocket(import.meta.env.VITE_WS_URL);
   const id = Math.random().toString(36).substring(7);
 
   let requests = [];
